@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Loopstudios landing page</title>
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&display=swap" rel="stylesheet">
+  <!-- Bootstrap link -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
+  <!-- AOS styles -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- CSS link -->
+  <link rel="stylesheet" href="styles.css">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/9bff4ac583.js" crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <section id="first-section" data-aos="fade-in" data-aos-duration="500" data-aos-once="true">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <nav class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed nav-section" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+        <img src="images/icon-hamburger.svg" alt="icon-hamburger">
+      </button>
+      <a class="navbar-brand nav-brand" href=""><img src="images/logo.svg" alt=""></a>
+      <!-- Collect the nav links, forms, and other content for toggling -->
+      <div class="collapse navbar-collapse" id="navbar">
+        <ul class="nav navbar-nav nav-wrapper nav-section">
+          <li class="nav-item nav-item-logo">
+            <a class="hidden-lg hidden-md hidden-sm" href=""><img src="images/logo.svg" alt="logo"></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">Carrers</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">Events</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">Support</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <h1 class="title" data-aos="fade-in" data-aos-duration="2000" data-aos-once="true">IMMERSIVE EXPERIENCES THAT DELIVER</h1>
+    <!-- For different images in desktop and phone -->
+    <img src="images/mobile/image-hero.jpg" alt="mobile-image" class="hidden-lg hidden-md hidden-sm">
+    <img src="images/desktop/image-hero.jpg" alt="desktop-image" class="hidden-xs">
+  </section>
+
+  <div id="second-section" class="container" data-aos="fade-up"  data-aos-duration="1000" data-aos-once="true">
+    <div class="image">
+      <img src="images/desktop/image-interactive.jpg" alt="desktop-image" class="hidden-xs hidden-sm">
+      <img src="images/mobile/image-interactive.jpg" alt="mobile-image" class="hidden-lg hidden-md mobile-img">
+    </div>
+    <div class="desc-section">
+      <h1 class="desc-title">THE LEADER IN INTERACTIVE VR</h1>
+      <p class="desc">Founded in 2011, Loopstudios has been producing world-class virtual reality
+        projects for some of the best companies around the globe. Our award-winning
+        creations have transformed businesses through digital experiences that bind
+        to their brand.</p>
+    </div>
+  </div>
+
+  <section id="third-section" data-aos="fade-up" data-aos-delay="50" data-aos-duration="1500" data-aos-once="true">
+    <button class="btn btn-lg hidden-xs hidden-sm" type="button" name="button">SEE ALL</button>
+    <h1 class="title-third-section">OUR CREATIONS</h1>
+    <div class="row top">
+      <div class="col-lg-3 col-md-4 creation">
+        <a href="">
+          <img src="images/desktop/image-deep-earth.jpg" alt="desktop-image" class="hidden-xs hidden-sm">
+          <img src="images/mobile/image-deep-earth.jpg" alt="mobile-image" class="hidden-lg hidden-md creation-mobile-image">
+          <h1 class="exception">DEEP EARTH</h1>
+        </a>
+      </div>
+      <div class="col-lg-3 col-md-4 creation">
+        <a href="">
+          <img src="images/desktop/image-night-arcade.jpg" alt="desktop-image" class="hidden-xs hidden-sm">
+          <img src="images/mobile/image-night-arcade.jpg" alt="mobile-image" class="hidden-lg hidden-md creation-mobile-image">
+          <h1>NIGHT ARCADE</h1>
+        </a>
+      </div>
+      <div class="col-lg-3 col-md-4 creation">
+        <a href="">
+          <img src="images/desktop/image-soccer-team.jpg" alt="desktop-image" class="hidden-xs hidden-sm">
+          <img src="images/mobile/image-soccer-team.jpg" alt="mobile-image" class="hidden-lg hidden-md creation-mobile-image">
+          <h1>SOCCER TEAM VR</h1>
+        </a>
+      </div>
+      <div class="col-lg-3 col-md-4 creation">
+        <a href="">
+          <img src="images/desktop/image-grid.jpg" alt="desktop-image" class="hidden-xs hidden-sm">
+          <img src="images/mobile/image-grid.jpg" alt="mobile-image" class="hidden-lg hidden-md creation-mobile-image">
+          <h1>THE GRID</h1>
+        </a>
+      </div>
+      <div class="col-lg-3 col-md-4 creation">
+        <a href="">
+          <img src="images/desktop/image-from-above.jpg" alt="desktop-image" class="hidden-xs hidden-sm">
+          <img src="images/mobile/image-from-above.jpg" alt="mobile-image" class="hidden-lg hidden-md creation-mobile-image">
+          <h1 class="exception">FROM UP ABOVE VR</h1>
+        </a>
+      </div>
+      <div class="col-lg-3 col-md-4 creation">
+        <a href="">
+          <img src="images/desktop/image-pocket-borealis.jpg" alt="desktop-image" class="hidden-xs hidden-sm">
+          <img src="images/mobile/image-pocket-borealis.jpg" alt="mobile-image" class="hidden-lg hidden-md creation-mobile-image">
+          <h1 class="exception">POCKET BOREALIS</h1>
+        </a>
+      </div>
+      <div class="col-lg-3 col-md-4 creation">
+        <a href="">
+          <img src="images/desktop/image-curiosity.jpg" alt="desktop-image" class="hidden-xs hidden-sm">
+          <img src="images/mobile/image-curiosity.jpg" alt="mobile-image" class="hidden-lg hidden-md creation-mobile-image">
+          <h1>THE CURIOSITY</h1>
+        </a>
+      </div>
+      <div class="col-lg-3 col-md-4 creation">
+        <a href="">
+          <img src="images/desktop/image-fisheye.jpg" alt="desktop-image" class="hidden-xs hidden-sm">
+          <img src="images/mobile/image-fisheye.jpg" alt="mobile-image" class="hidden-lg hidden-md  creation-mobile-image">
+          <h1>MAKE IT FISHEYE</h1>
+        </a>
+      </div>
+    </div>
+    <button class="btn btn-lg hidden-lg hidden-md" type="button" name="button">SEE ALL</button>
+  </section>
+
+  <footer id="footer">
+    <div class="row">
+      <div class="col-lg-6 col-md-6 left-footer">
+        <h1>
+          <a href="#first-section"><img src="images/logo.svg" alt=""></a>
+        </h1>
+        <p class="footer-links">
+          <a style="padding-left: 0;" href="#second-section">About</a>
+          <a href="">Careers</a>
+          <a href="">Events</a>
+          <a href="#third-section">Products</a>
+          <a href="">Support</a>
+        </p>
+      </div>
+      <div class="col-lg-6 right-footer">
+        <a href=""><i class="fab fa-2x fa-facebook footer-icon"></i></a>
+        <a href=""><i class="fab fa-2x fa-twitter footer-icon"></i></a>
+        <a href=""><i class="fab fa-2x fa-pinterest footer-icon"></i></a>
+        <a href=""><i class="fab fa-2x fa-instagram footer-icon"></i></a>
+        <p class="copyright">© 2021 Loopstudios. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://sarthak-21.github.io/My-personal-site/" target="_blank">Sarthak Luthra</a>.
+  </div>
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+   AOS.init();
+  </script>
+</body>
+
+</html>
