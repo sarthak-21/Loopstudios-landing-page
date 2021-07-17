@@ -32,8 +32,8 @@
   <section id="first-section" data-aos="fade-in" data-aos-duration="500" data-aos-once="true">
     <!-- Brand and toggle get grouped for better mobile display -->
     <nav class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed nav-section" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
-        <img src="images/icon-hamburger.svg" alt="icon-hamburger">
+      <button type="button" class="navbar-toggle collapsed nav-section" onclick="changeImage()" data-toggle="collapse" data-target="#navbar" aria-expanded="false">
+        <img id="img" src="images/icon-hamburger.svg" alt="icon">
       </button>
       <a class="navbar-brand nav-brand" href=""><img src="images/logo.svg" alt=""></a>
       <!-- Collect the nav links, forms, and other content for toggling -->
@@ -66,7 +66,7 @@
     <img src="images/desktop/image-hero.jpg" alt="desktop-image" class="hidden-xs">
   </section>
 
-  <div id="second-section" class="container" data-aos="fade-up"  data-aos-duration="1000" data-aos-once="true">
+  <div id="second-section" class="container" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
     <div class="image">
       <img src="images/desktop/image-interactive.jpg" alt="desktop-image" class="hidden-xs hidden-sm">
       <img src="images/mobile/image-interactive.jpg" alt="mobile-image" class="hidden-lg hidden-md mobile-img">
@@ -171,10 +171,18 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="https://sarthak-21.github.io/My-personal-site/" target="_blank">Sarthak Luthra</a>.
   </div>
-  <script src="script.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
-   AOS.init();
+    AOS.init();
+    // changing the toggle button to close on click
+    function changeImage(a) {
+      var image = document.getElementById("img");
+      if (image.src.match("images/icon-hamburger.svg")) {
+        image.src = "images/icon-close.svg";
+      } else {
+        image.src = "images/icon-hamburger.svg";
+      }
+    }
   </script>
 </body>
 

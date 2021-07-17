@@ -16,6 +16,7 @@ body{
   color: white;
   text-decoration: none;
   background-color: transparent!important;
+  padding-bottom: 3%;
 }
 
 .nav-link:hover, .nav-link:focus, .nav-link:active{
